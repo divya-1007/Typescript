@@ -3,8 +3,7 @@ import express from 'express';
 
 export const resgitrationVali = () => {
     return [
-      body('name', 'Username Cannot Be Empty').not().isEmpty(),
-      body('email').not().isEmpty().withMessage('Email Cannot Be Empty').isEmail().withMessage('Invalid Email'),
+      body('number', 'Number Cannot Be Empty').not().isEmpty(),
       body('password', 'Password Cannot Be Empty').not().isEmpty(),
     ]
 }
